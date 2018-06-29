@@ -2,8 +2,8 @@
   <component name="libraryTable">
     <library name="JFlex &amp; idea-flex.skeleton">
       <CLASSES>
-        <root url="jar://$USER_HOME$/Documents/dev/proj/idea_plugin/jflex-1.7.0.jar!/" />
-        <root url="file://$USER_HOME$/Documents/dev/proj/idea_plugin/idea-flex.skeleton" />
+        <root url="jar://$USER_HOME$/Documents/dev/IntelliJ-EmmyLua/jflex-1.7.0.jar!/" />
+        <root url="file://$USER_HOME$/Documents/dev/IntelliJ-EmmyLua/idea-flex.skeleton" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
