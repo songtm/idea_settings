@@ -4,6 +4,8 @@
       <CLASSES>
         <root url="jar://$USER_HOME$/Documents/dev/IntelliJ-EmmyLua/jflex-1.7.0.jar!/" />
         <root url="file://$USER_HOME$/Documents/dev/IntelliJ-EmmyLua/idea-flex.skeleton" />
+        <root url="file://$USER_HOME$/Documents/dev/proj/IntelliJ-EmmyLua/idea-flex.skeleton" />
+        <root url="jar://$USER_HOME$/Documents/dev/proj/IntelliJ-EmmyLua/jflex-1.7.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
