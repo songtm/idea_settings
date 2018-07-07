@@ -16,4 +16,12 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="test" value="table.insert($list$, $pos$, $value$)" description="test" toReformat="false" toShortenFQNames="true">
+    <variable name="list" expression="complete()" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
+    <variable name="pos" expression="" defaultValue="&quot;pos&quot;" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
