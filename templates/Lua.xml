@@ -1,6 +1,6 @@
 <templateSet group="Lua">
   <template name="cls" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
-    <variable name="PARAMS" expression="completeSmart()" defaultValue="&quot;clsname&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="fileNameWithoutExtension()" defaultValue="&quot;clsname&quot;" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
