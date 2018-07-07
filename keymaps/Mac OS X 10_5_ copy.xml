@@ -95,6 +95,8 @@
   <action id="LuaCheck">
     <keyboard-shortcut first-keystroke="alt f9" />
   </action>
+  <action id="MoveStatementDown" />
+  <action id="MoveStatementUp" />
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="ctrl slash" />
   </action>

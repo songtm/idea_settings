@@ -16,4 +16,13 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="cfunc" value="function $CLASSNAME$:$FunName$" description="class member function" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="FunName" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
