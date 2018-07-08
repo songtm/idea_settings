@@ -26,6 +26,7 @@
   <action id="EditorAddOrRemoveCaret">
     <mouse-shortcut keystroke="meta button1" />
   </action>
+  <action id="EditorChooseLookupItemReplace" />
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
@@ -97,6 +98,7 @@
   </action>
   <action id="ParameterInfo">
     <keyboard-shortcut first-keystroke="ctrl slash" />
+    <keyboard-shortcut first-keystroke="shift alt slash" />
   </action>
   <action id="QuickEvaluateExpression">
     <keyboard-shortcut first-keystroke="meta alt f8" />
@@ -125,10 +127,6 @@
   </action>
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="alt home" />
-  </action>
-  <action id="SmartTypeCompletion">
-    <keyboard-shortcut first-keystroke="shift ctrl space" />
-    <keyboard-shortcut first-keystroke="shift alt slash" />
   </action>
   <action id="Stop" />
   <action id="ToggleBookmark">
