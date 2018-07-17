@@ -4,6 +4,7 @@
     <option name="luaCheckArgs" value="-g" />
   </component>
   <component name="LuaSettings">
+    <option name="dotCompleteAsColon" value="true" />
     <option name="showWordsInFile" value="false" />
   </component>
 </application>
