@@ -3,4 +3,18 @@
     <option name="luaCheck" value="/usr/local/bin/luacheck" />
     <option name="luaCheckArgs" value="-g" />
   </component>
+  <component name="LuaSettings">
+    <option name="autoInsertParameters" value="true" />
+    <option name="constructorNames">
+      <array>
+        <option value="new" />
+        <option value="get" />
+        <option value="getInstance" />
+      </array>
+    </option>
+    <option name="constructorNamesString" value="new;get;getInstance" />
+    <option name="dotCompleteAsColon" value="true" />
+    <option name="showParamComplete" value="false" />
+    <option name="showWordsInFile" value="false" />
+  </component>
 </application>

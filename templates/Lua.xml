@@ -1,6 +1,6 @@
 <templateSet group="Lua">
   <template name="cls" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
-    <variable name="PARAMS" expression="completeSmart()" defaultValue="&quot;clsname&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="fileNameWithoutExtension()" defaultValue="&quot;clsname&quot;" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
@@ -16,10 +16,50 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="test" value="table.insert($list$, $pos$, $value$)" description="test" toReformat="false" toShortenFQNames="true">
-    <variable name="list" expression="complete()" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
-    <variable name="pos" expression="" defaultValue="&quot;pos&quot;" alwaysStopAt="true" />
-    <variable name="value" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+  <template name="cfunc" value="function $CLASSNAME$:$FunName$" description="class member function" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="FunName" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="uimain" value="local gameUI = gameUI&#10;local gameUILayerWindow =require(&quot;game.core.gameUILayerWindow&quot;)&#10;---@class $CLASSNAME$ : $Base$&#10;local $CLASSNAME$ = class(&quot;$CLASSNAME$&quot;,gameUILayerWindow)&#10;gameUI.Init($CLASSNAME$)&#10;&#10;&#10;function $CLASSNAME$:OnDestory()&#10;    $CLASSNAME$.super.OnDestory(self)&#10;end&#10;&#10;function $CLASSNAME$:awake()&#10;    $CLASSNAME$.super.awake(self)&#10;    self:bindUI(self._uiObject)&#10;    &#10;    self:onRefresh()&#10;end&#10;&#10;function $CLASSNAME$:onRefresh()&#10;    $END$&#10;end&#10;&#10;return $CLASSNAME$" description="ui main lua file" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="Base" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="uicell" value="local gameUILayerWindow = require (&quot;game/core/gameUILayerWindow&quot;)&#10;---@class $CLASSNAME$&#10;local $CLASSNAME$ = class(&quot;$CLASSNAME$&quot;,gameUILayerWindow);&#10;&#10;function $CLASSNAME$:ctor()&#10;    $CLASSNAME$.super.ctor(self)  &#10;end&#10;---@return $CLASSNAME$&#10;function $CLASSNAME$:create()&#10;    local layer = $CLASSNAME$.new()&#10;    layer:init()&#10;    return layer&#10;end&#10;&#10;function $CLASSNAME$:init()&#10;    self:_loadRes(&quot;uguiprefab.data&quot;,&quot;$prefabName$&quot;) &#10;    self:updateData()&#10;end&#10;&#10;&#10;function $CLASSNAME$:updateData()&#10;    &#10;end&#10;&#10;return $CLASSNAME$" description="ui cell of table view" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="prefabName" expression="" defaultValue="&quot;obj_xxx&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="uimainScroll" value="local gameUI = gameUI&#10;local gameUILayerWindow =require(&quot;game.core.gameUILayerWindow&quot;)&#10;---@class $CLASSNAME$&#10;local $CLASSNAME$ = class(&quot;$CLASSNAME$&quot;,gameUILayerWindow)&#10;gameUI.Init($CLASSNAME$)&#10;&#10;&#10;function $CLASSNAME$:OnDestory()&#10;    for k, item in pairs(self.m_Table) do&#10;        item:destory()&#10;    end&#10;    $CLASSNAME$.super.OnDestory(self)&#10;end&#10;&#10;function $CLASSNAME$:awake()&#10;    $CLASSNAME$.super.awake(self)&#10;    self:bindUI(self._uiObject)&#10;    &#10;    self.m_Table = {}&#10;    &#10;    self:onRefresh()&#10;end&#10;&#10;function $CLASSNAME$:onRefresh()&#10;    self.m_array = {}&#10;    self.c_scorll_list.LoopVerticalScrollRect.totalCount = #self.m_array&#10;    self.c_scorll_list.LoopVerticalScrollRect:RefillCells(0)&#10;end&#10;&#10;function $CLASSNAME$:OnScrollCellIndexChange_scorll_list(transIndex,dataIndex)&#10;    local data = self.m_array[dataIndex]&#10;    if self.m_Table[transIndex] == nil then&#10;        local item = uiArenaRankItem:create(data)&#10;        local objName = &quot;c_storage_item_node&quot;..transIndex&#10;        local par = self[objName]&#10;        local trans = item.mUIObject.transform&#10;        trans:SetParent(par.Image.gameObject.transform)&#10;        trans.localPosition = Vector3(0,0,0)&#10;        SKUnityTools.toInitTransform(item.mUIObject.transform)&#10;        item:setCallback(handler(self, self._onClick))&#10;        self.m_Table[transIndex] = item&#10;    else&#10;        self.m_Table[transIndex]:updateData(data)&#10;    end&#10;end&#10;&#10;return $CLASSNAME$" description="scroll loop" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="func" value="function $FN$($PARAMS$)&#10;$END$&#10;end" description="function functionName() end" toReformat="true" toShortenFQNames="true">
+    <variable name="FN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="test" value="print($p1$, $p2$, $p3$)" description="test" toReformat="false" toShortenFQNames="true">
+    <variable name="p1" expression="" defaultValue="&quot;p1&quot;" alwaysStopAt="true" />
+    <variable name="p2" expression="" defaultValue="&quot;p2&quot;" alwaysStopAt="true" />
+    <variable name="p3" expression="" defaultValue="&quot;p3&quot;" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
     </context>
