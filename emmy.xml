@@ -9,10 +9,10 @@
       <array>
         <option value="new" />
         <option value="get" />
-        <option value="getInstancex" />
+        <option value="getInstance" />
       </array>
     </option>
-    <option name="constructorNamesString" value="new;get;getInstancex" />
+    <option name="constructorNamesString" value="new;get;getInstance" />
     <option name="dotCompleteAsColon" value="true" />
     <option name="showParamComplete" value="false" />
     <option name="showWordsInFile" value="false" />
