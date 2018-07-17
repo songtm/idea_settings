@@ -5,6 +5,14 @@
   </component>
   <component name="LuaSettings">
     <option name="autoInsertParameters" value="true" />
+    <option name="constructorNames">
+      <array>
+        <option value="new" />
+        <option value="get" />
+        <option value="getInstancex" />
+      </array>
+    </option>
+    <option name="constructorNamesString" value="new;get;getInstancex" />
     <option name="dotCompleteAsColon" value="true" />
     <option name="showParamComplete" value="false" />
     <option name="showWordsInFile" value="false" />
