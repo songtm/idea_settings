@@ -57,8 +57,8 @@
     <context />
   </template>
   <template name="test" value="print($p1$, $p2$, $p3$)" description="test" toReformat="false" toShortenFQNames="true">
-    <variable name="p1" expression="" defaultValue="&quot;p1&quot;" alwaysStopAt="true" />
-    <variable name="p2" expression="" defaultValue="&quot;p2&quot;" alwaysStopAt="true" />
+    <variable name="p1" expression="date()" defaultValue="&quot;p1&quot;" alwaysStopAt="true" />
+    <variable name="p2" expression="SuggestFirstLuaVarName()" defaultValue="&quot;p2&quot;" alwaysStopAt="true" />
     <variable name="p3" expression="" defaultValue="&quot;p3&quot;" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
