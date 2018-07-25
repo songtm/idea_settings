@@ -12,5 +12,6 @@
       </array>
     </option>
     <option name="constructorNamesString" value="new;get;getInstance" />
+    <option name="showWordsInFile" value="false" />
   </component>
 </application>
