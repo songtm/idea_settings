@@ -95,8 +95,10 @@
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="shift meta r" />
   </action>
+  <action id="GotoTest" />
   <action id="HippieBackwardCompletion" />
   <action id="HippieCompletion" />
+  <action id="Images.ShowThumbnails" />
   <action id="LuaCheck">
     <keyboard-shortcut first-keystroke="alt f9" />
   </action>
@@ -113,10 +115,14 @@
     <keyboard-shortcut first-keystroke="alt f8" />
   </action>
   <action id="Refresh" />
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
   <action id="Replace" />
   <action id="ReplaceInPath" />
   <action id="Rerun" />
   <action id="RunDashboard.CopyConfiguration" />
+  <action id="RunDashboard.ShowConfigurations" />
   <action id="RunToCursor" />
   <action id="SelectAllOccurrences">
     <keyboard-shortcut first-keystroke="meta k" />
