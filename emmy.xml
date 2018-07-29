@@ -14,6 +14,7 @@
     </option>
     <option name="constructorNamesString" value="new;get;getInstance" />
     <option name="dotCompleteAsColon" value="true" />
+    <option name="languageLevel" value="Lua 5.1" />
     <option name="showParamComplete" value="false" />
     <option name="showWordsInFile" value="false" />
   </component>

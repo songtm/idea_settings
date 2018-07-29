@@ -57,11 +57,19 @@
     <context />
   </template>
   <template name="test" value="print($p1$, $p2$, $p3$)" description="test" toReformat="false" toShortenFQNames="true">
-    <variable name="p1" expression="" defaultValue="&quot;p1&quot;" alwaysStopAt="true" />
-    <variable name="p2" expression="" defaultValue="&quot;p2&quot;" alwaysStopAt="true" />
+    <variable name="p1" expression="date()" defaultValue="&quot;p1&quot;" alwaysStopAt="true" />
+    <variable name="p2" expression="SuggestFirstLuaVarName()" defaultValue="&quot;p2&quot;" alwaysStopAt="true" />
     <variable name="p3" expression="" defaultValue="&quot;p3&quot;" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="uimanager" value="---@class $clsname$&#10;cc.exports.$clsname$ = class(&quot;$clsname$&quot;)&#10;&#10;local shareInstance = nil&#10;&#10;function $clsname$:ctor()&#10;    $END$&#10;end&#10;&#10;function $clsname$:delete()&#10;    shareInstance = nil&#10;end&#10;---@return $clsname$&#10;function $clsname$:getInstance()&#10;    if not shareInstance then shareInstance = $clsname$:new() end&#10;    return shareInstance&#10;end&#10;&#10;function $clsname$:destroyInstance()&#10;    if shareInstance then&#10;        shareInstance:delete()&#10;        shareInstance = nil&#10;    end&#10;end&#10;" description="uimanager" toReformat="false" toShortenFQNames="true">
+    <variable name="clsname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
     </context>
   </template>
 </templateSet>
