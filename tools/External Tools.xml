@@ -9,7 +9,7 @@
   <tool name="evaluate lua" description="evaluate lua " showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="$USER_HOME$/Documents/dev/evaluate_lua.sh" />
-      <option name="PARAMETERS" value="&quot;$SelectedText$&quot;" />
+      <option name="PARAMETERS" value="$SelectedText$" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
