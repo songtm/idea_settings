@@ -99,9 +99,6 @@
   <action id="HippieBackwardCompletion" />
   <action id="HippieCompletion" />
   <action id="Images.ShowThumbnails" />
-  <action id="LuaCheck">
-    <keyboard-shortcut first-keystroke="alt f9" />
-  </action>
   <action id="MoveStatementDown" />
   <action id="MoveStatementUp" />
   <action id="ParameterInfo">
@@ -144,6 +141,9 @@
   <action id="Stop" />
   <action id="ToggleBookmark">
     <keyboard-shortcut first-keystroke="meta f2" />
+  </action>
+  <action id="Tool_External Tools_evaluate lua">
+    <keyboard-shortcut first-keystroke="alt f9" />
   </action>
   <action id="UsageView.Rerun" />
   <action id="Vcs.EditSource" />
