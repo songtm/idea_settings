@@ -1,7 +1,7 @@
 <application>
   <component name="LuaCheckSettings">
     <option name="luaCheck" value="/usr/local/bin/luacheck" />
-    <option name="luaCheckArgs" value="" />
+    <option name="luaCheckArgs" value="-g" />
   </component>
   <component name="LuaSettings">
     <option name="autoInsertParameters" value="true" />
