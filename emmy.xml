@@ -17,6 +17,6 @@
     <option name="languageLevel" value="Lua 5.1" />
     <option name="mobdebugConnectPause" value="false" />
     <option name="showParamComplete" value="false" />
-    <option name="showWordsInFile" value="false" />
+    <option name="showSmartCompleteTip" value="true" />
   </component>
 </application>
