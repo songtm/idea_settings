@@ -16,6 +16,7 @@
     <option name="dotCompleteAsColon" value="true" />
     <option name="languageLevel" value="Lua 5.1" />
     <option name="mobdebugConnectPause" value="false" />
+    <option name="reverseServer" value="192.168.2.29" />
     <option name="showParamComplete" value="false" />
     <option name="showWordsInFile" value="false" />
   </component>
