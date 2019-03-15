@@ -144,6 +144,11 @@
         </Profile>
       </list>
     </option>
+    <option name="tailSettings">
+      <TailSettings>
+        <option name="enabled" value="true" />
+      </TailSettings>
+    </option>
     <option name="version" value="1" />
   </component>
 </application>
