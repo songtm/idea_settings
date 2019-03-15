@@ -116,6 +116,10 @@
                     </GrepExpressionItem>
                     <GrepExpressionItem>
                       <option name="action" value="REMOVE" />
+                      <option name="grepExpression" value=".*DebugBindings.*" />
+                    </GrepExpressionItem>
+                    <GrepExpressionItem>
+                      <option name="action" value="REMOVE" />
                       <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*unwanted line.*" />
                     </GrepExpressionItem>
