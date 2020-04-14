@@ -124,7 +124,9 @@
   </action>
   <action id="Replace" />
   <action id="ReplaceInPath" />
-  <action id="Rerun">
+  <action id="Rerun" />
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="ctrl r" />
     <keyboard-shortcut first-keystroke="meta b" />
   </action>
   <action id="RunDashboard.CopyConfiguration" />
