@@ -78,4 +78,10 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
+  <template name="state" value="local StateBase = require(&quot;battle.server.states.StateBase&quot;)&#10;---@class $classname$ : StateBase&#10;local $classname$ = class(&quot;$classname$&quot;, StateBase)&#10;&#10;function $classname$:ctor(player)&#10;    self.super.ctor(self, player)&#10;end&#10;&#10;function $classname$:enter()&#10;    self.super.enter(self)&#10;end&#10;&#10;function $classname$:exit()&#10;    self.super.exit(self)&#10;end&#10;&#10;function $classname$:update()&#10;&#10;end&#10;&#10;return $classname$" description="battle state" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
