@@ -10,10 +10,12 @@
         <option value="new" />
         <option value="get" />
         <option value="getInstance" />
-        <option value="inst" />
+        <option value="instance" />
+        <option value="ctor" />
+        <option value="create" />
       </array>
     </option>
-    <option name="constructorNamesString" value="new;get;getInstance;inst" />
+    <option name="constructorNamesString" value="new;get;getInstance;instance;ctor;create" />
     <option name="dotCompleteAsColon" value="true" />
     <option name="mobdebugConnectPause" value="false" />
     <option name="showParamComplete" value="false" />
