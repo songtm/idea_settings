@@ -18,6 +18,7 @@
     <option name="constructorNamesString" value="new;get;getInstance;instance;ctor;create" />
     <option name="dotCompleteAsColon" value="true" />
     <option name="mobdebugConnectPause" value="false" />
+    <option name="multiLangFile" value="textChinese.lua" />
     <option name="showParamComplete" value="false" />
     <option name="showWordsInFile" value="false" />
   </component>
