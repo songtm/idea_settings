@@ -8,5 +8,11 @@
     <option id="lua.hints.show_local_var_type" value="true" />
     <option id="lua.hints.show_function_type" value="true" />
     <option id="lua.hints.show_parameter_type" value="true" />
+    <disabledLanguages>
+      <language id="JAVA" />
+      <language id="kotlin" />
+      <language id="Lua" />
+      <language id="Groovy" />
+    </disabledLanguages>
   </component>
 </application>
