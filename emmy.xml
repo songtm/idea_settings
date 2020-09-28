@@ -14,6 +14,7 @@
       </array>
     </option>
     <option name="constructorNamesString" value="new;get;getInstance;new;ctor" />
+    <option name="dotAsColon" value="true" />
     <option name="showWordsInFile" value="false" />
   </component>
 </application>

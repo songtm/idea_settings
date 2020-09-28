@@ -6,11 +6,19 @@
   <action id="EditorChooseLookupItem">
     <keyboard-shortcut first-keystroke="enter" />
     <keyboard-shortcut first-keystroke="shift enter" />
+    <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
   <action id="EditorStartNewLine" />
   <action id="ExpandExpandableComponent">
     <keyboard-shortcut first-keystroke="meta add" />
     <keyboard-shortcut first-keystroke="meta equals" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="meta b" />
+    <mouse-shortcut keystroke="meta button1" />
+    <mouse-shortcut keystroke="Force touch" />
+    <mouse-shortcut keystroke="button2" />
+    <keyboard-shortcut first-keystroke="alt g" />
   </action>
   <action id="OpenElementInNewWindow" />
   <action id="SetShortcutAction" />
