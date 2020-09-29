@@ -3,4 +3,17 @@
     <option name="luaCheck" value="/usr/local/bin/luacheck" />
     <option name="luaCheckArgs" value="-g" />
   </component>
+  <component name="LuaSettings">
+    <option name="constructorNames">
+      <array>
+        <option value="new" />
+        <option value="create" />
+        <option value="getInstance" />
+        <option value="ctor" />
+      </array>
+    </option>
+    <option name="constructorNamesString" value="new;create;getInstance;ctor" />
+    <option name="dotAsColon" value="true" />
+    <option name="showWordsInFile" value="false" />
+  </component>
 </application>
