@@ -7,13 +7,12 @@
     <option name="constructorNames">
       <array>
         <option value="new" />
-        <option value="get" />
+        <option value="create" />
         <option value="getInstance" />
-        <option value="new" />
         <option value="ctor" />
       </array>
     </option>
-    <option name="constructorNamesString" value="new;get;getInstance;new;ctor" />
+    <option name="constructorNamesString" value="new;create;getInstance;ctor" />
     <option name="dotAsColon" value="true" />
     <option name="showWordsInFile" value="false" />
   </component>
