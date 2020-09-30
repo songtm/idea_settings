@@ -6,8 +6,7 @@
       <blacklist language="Kotlin" />
     </blacklists>
     <option id="lua.hints.show_local_var_type" value="true" />
-    <option id="lua.hints.show_function_type" value="true" />
-    <option id="lua.hints.show_parameter_type" value="true" />
+    <option id="lua.hints.show_args_type" value="false" />
     <disabledLanguages>
       <language id="JAVA" />
       <language id="kotlin" />
