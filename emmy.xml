@@ -4,6 +4,7 @@
     <option name="luaCheckArgs" value="-g" />
   </component>
   <component name="LuaSettings">
+    <option name="appendVargs" value="UIManager|push|init;" />
     <option name="autoInsertParameters" value="true" />
     <option name="dotAsColon" value="true" />
     <option name="enableGeneric" value="true" />
