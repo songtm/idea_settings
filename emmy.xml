@@ -6,6 +6,7 @@
   <component name="LuaSettings">
     <option name="autoInsertParameters" value="true" />
     <option name="dotAsColon" value="true" />
+    <option name="enableGeneric" value="true" />
     <option name="recognizeGlobalNameAsType" value="false" />
     <option name="showWordsInFile" value="false" />
   </component>
