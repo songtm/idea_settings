@@ -9,5 +9,6 @@
     <option name="enableGeneric" value="true" />
     <option name="recognizeGlobalNameAsType" value="false" />
     <option name="showWordsInFile" value="false" />
+    <option name="tooLargerFileThreshold" value="1" />
   </component>
 </application>

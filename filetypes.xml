@@ -5,6 +5,7 @@
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="log" type="PLAIN_TEXT" />
+      <mapping ext="qrc" type="XML" />
       <mapping pattern="*.lua.txt" type="lua" />
     </extensionMap>
   </component>
