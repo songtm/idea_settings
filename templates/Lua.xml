@@ -84,4 +84,12 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
+  <template name="tst" value="$tab$" description="class member function" toReformat="false" toShortenFQNames="true">
+    <variable name="tab" expression="regularExpression(clipboard(), &quot;(.*)\\.(.*)&quot;, &quot;$1[\&quot;$2\&quot;]&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
