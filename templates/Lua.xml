@@ -17,7 +17,7 @@
     </context>
   </template>
   <template name="cfunc" value="function $CLASSNAME$:$FunName$" description="class member function" toReformat="false" toShortenFQNames="true">
-    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="CLASSNAME" expression="LuaPrevSiblingClassName()" defaultValue="" alwaysStopAt="false" />
     <variable name="FunName" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
