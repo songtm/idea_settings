@@ -1,5 +1,5 @@
 <templateSet group="Lua">
-  <template name="cls" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
+  <template name="class annotator" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
     <variable name="PARAMS" expression="fileNameWithoutExtension()" defaultValue="&quot;clsname&quot;" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -72,7 +72,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="class" value="---@class $classname$&#10;local $classname$ = class(&quot;$classname$&quot;)&#10;&#10;function $classname$:ctor()&#10;    $END$&#10;end&#10;&#10;return $classname$&#10;" description="class" toReformat="false" toShortenFQNames="true">
+  <template name="class" value="---@class $classname$&#10;local $classname$ = class(&quot;$classname$&quot;)&#10;&#10;function $classname$:ctor()&#10;    $END$&#10;end&#10;&#10;return $classname$&#10;" description="以文件名生成类" toReformat="false" toShortenFQNames="true">
     <variable name="classname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
