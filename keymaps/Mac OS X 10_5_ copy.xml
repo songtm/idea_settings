@@ -187,6 +187,9 @@
   <action id="Tool_External Tools_evaluate lua">
     <keyboard-shortcut first-keystroke="alt f9" />
   </action>
+  <action id="TypeHierarchy">
+    <keyboard-shortcut first-keystroke="meta h" />
+  </action>
   <action id="UsageView.Rerun" />
   <action id="Vcs.EditSource" />
   <action id="Vcs.Push" />
