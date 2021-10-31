@@ -46,6 +46,9 @@
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorDuplicate" />
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="shift meta k" />
+  </action>
   <action id="EditorStartNewLine" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta end" />
@@ -57,6 +60,9 @@
   </action>
   <action id="EditorToggleColumnMode">
     <keyboard-shortcut first-keystroke="shift meta l" />
+  </action>
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="shift meta j" />
   </action>
   <action id="EditorUnindentSelection">
     <keyboard-shortcut first-keystroke="shift tab" />
@@ -183,6 +189,7 @@
   </action>
   <action id="UsageView.Rerun" />
   <action id="Vcs.EditSource" />
+  <action id="Vcs.Push" />
   <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.EditWatch" />
   <action id="XDebugger.JumpToSource" />
