@@ -1,5 +1,5 @@
 <templateSet group="Lua">
-  <template name="cls" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
+  <template name="class annotator" value="---@class $PARAMS$" description="class 注解" toReformat="false" toShortenFQNames="true">
     <variable name="PARAMS" expression="fileNameWithoutExtension()" defaultValue="&quot;clsname&quot;" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -17,7 +17,7 @@
     </context>
   </template>
   <template name="cfunc" value="function $CLASSNAME$:$FunName$" description="class member function" toReformat="false" toShortenFQNames="true">
-    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+    <variable name="CLASSNAME" expression="LuaPrevSiblingClassName()" defaultValue="" alwaysStopAt="false" />
     <variable name="FunName" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -72,7 +72,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="class" value="---@class $classname$&#10;local $classname$ = class(&quot;$classname$&quot;)&#10;&#10;function $classname$:ctor()&#10;    $END$&#10;end&#10;&#10;return $classname$&#10;" description="class" toReformat="false" toShortenFQNames="true">
+  <template name="class" value="---@class $classname$&#10;local $classname$ = class(&quot;$classname$&quot;)&#10;&#10;function $classname$:ctor()&#10;    $END$&#10;end&#10;&#10;return $classname$&#10;" description="以文件名生成类" toReformat="false" toShortenFQNames="true">
     <variable name="classname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -80,6 +80,18 @@
   </template>
   <template name="state" value="local StateBase = require(&quot;battle.server.states.StateBase&quot;)&#10;---@class $classname$ : StateBase&#10;local $classname$ = class(&quot;$classname$&quot;, StateBase)&#10;&#10;function $classname$:ctor(player)&#10;    self.super.ctor(self, player)&#10;end&#10;&#10;function $classname$:enter()&#10;    self.super.enter(self)&#10;end&#10;&#10;function $classname$:exit()&#10;    self.super.exit(self)&#10;end&#10;&#10;function $classname$:update()&#10;&#10;end&#10;&#10;return $classname$" description="battle state" toReformat="false" toShortenFQNames="true">
     <variable name="classname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tst" value="$aa$$SELECTION$" description="class member function" toReformat="false" toShortenFQNames="true">
+    <variable name="aa" expression="collectionElementName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="req" value="require(&quot;$mod$&quot;)" description="require" toReformat="false" toShortenFQNames="true">
+    <variable name="mod" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
     </context>

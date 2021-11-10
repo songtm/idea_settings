@@ -15,7 +15,6 @@
     <keyboard-shortcut first-keystroke="alt comma" />
   </action>
   <action id="CallHierarchy">
-    <keyboard-shortcut first-keystroke="ctrl alt h" />
     <keyboard-shortcut first-keystroke="meta g" />
   </action>
   <action id="ChangesView.Diff" />
@@ -47,6 +46,9 @@
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorDuplicate" />
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="shift meta k" />
+  </action>
   <action id="EditorStartNewLine" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta end" />
@@ -58,6 +60,9 @@
   </action>
   <action id="EditorToggleColumnMode">
     <keyboard-shortcut first-keystroke="shift meta l" />
+  </action>
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="shift meta j" />
   </action>
   <action id="EditorUnindentSelection">
     <keyboard-shortcut first-keystroke="shift tab" />
@@ -98,7 +103,6 @@
     <mouse-shortcut keystroke="alt button1" />
   </action>
   <action id="GotoFile">
-    <keyboard-shortcut first-keystroke="shift meta o" />
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
   <action id="GotoNextBookmark">
@@ -145,6 +149,9 @@
   <action id="Replace" />
   <action id="ReplaceInPath" />
   <action id="Rerun" />
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="shift meta o" />
+  </action>
   <action id="Run">
     <keyboard-shortcut first-keystroke="ctrl r" />
     <keyboard-shortcut first-keystroke="meta b" />
@@ -180,8 +187,12 @@
   <action id="Tool_External Tools_evaluate lua">
     <keyboard-shortcut first-keystroke="alt f9" />
   </action>
+  <action id="TypeHierarchy">
+    <keyboard-shortcut first-keystroke="meta h" />
+  </action>
   <action id="UsageView.Rerun" />
   <action id="Vcs.EditSource" />
+  <action id="Vcs.Push" />
   <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.EditWatch" />
   <action id="XDebugger.JumpToSource" />
